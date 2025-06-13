@@ -1,36 +1,29 @@
-import './globals.css'
+import type React from "react"
+import "@/app/globals.css"
+import { Inter } from "next/font/google"
+import { Toaster } from "@/components/ui/toaster"
 
-import { IBM_Plex_Mono, Inter, PT_Serif } from 'next/font/google'
+const inter = Inter({ subsets: ["latin"] })
 
-const serif = PT_Serif({
-  variable: '--font-serif',
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  weight: ['400', '700'],
-})
-const sans = Inter({
-  variable: '--font-sans',
-  subsets: ['latin'],
-  // @todo: understand why extrabold (800) isn't being respected when explicitly specified in this weight array
-  // weight: ['500', '700', '800'],
-})
-const mono = IBM_Plex_Mono({
-  variable: '--font-mono',
-  subsets: ['latin'],
-  weight: ['500', '700'],
-})
+export const metadata = {
+  title: "Sky Lounge Billing System",
+  description: "Advanced billing system for Sky Lounge",
+    generator: 'v0.dev'
+}
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="en"
-      className={`${mono.variable} ${sans.variable} ${serif.variable}`}
-    >
-      <body>{children}</body>
+    <html lang="en" className="h-full">
+      <body className={`${inter.className} h-full bg-background text-foreground antialiased`}>
+        <main className="flex min-h-screen flex-col">
+          <div className="flex-1">{children}</div>
+        </main>
+        <Toaster />
+      </body>
     </html>
   )
 }
