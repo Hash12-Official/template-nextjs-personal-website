@@ -228,3 +228,4 @@ NOTE: This payment has been paid out.`
 Thank you for your business!`
   return billText
 }
+

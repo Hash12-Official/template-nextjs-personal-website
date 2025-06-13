@@ -96,3 +96,4 @@ function validateCardNumber(cardNumber: string): boolean {
 
   return sum % 10 === 0
 }
+

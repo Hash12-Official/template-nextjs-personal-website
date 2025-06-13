@@ -124,3 +124,4 @@ export function validateExpiryDate(expiryDate: string): boolean {
 export function validateCVV(cvv: string): boolean {
   return /^\d{3}$/.test(cvv)
 }
+

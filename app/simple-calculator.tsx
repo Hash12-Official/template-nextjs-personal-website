@@ -121,3 +121,4 @@ export function SimpleCalculator({ onBack }: { onBack: () => void }) {
     </div>
   )
 }
+

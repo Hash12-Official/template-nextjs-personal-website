@@ -111,3 +111,4 @@ function getBrandFromCardNumber(cardNumber: string): string {
       return "unknown"
   }
 }
+
