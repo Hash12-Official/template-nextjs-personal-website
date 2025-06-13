@@ -237,4 +237,3 @@ export function FinanceSheet({ onBack, adminState, setAdminState }: FinanceSheet
     </div>
   )
 }
-

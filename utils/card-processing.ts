@@ -103,4 +103,3 @@ export async function processCardPayment(amount: number, cardDetails: AdminCardD
     throw new Error('Payment processing failed')
   }
 }
-

@@ -472,4 +472,3 @@ export function AdminDashboard({
     </div>
   )
 }
-

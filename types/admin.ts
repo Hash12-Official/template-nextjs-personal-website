@@ -68,4 +68,3 @@ export function formatCardNumber(cardNumber: string): string {
 export function maskCardNumber(cardNumber: string): string {
   return cardNumber.slice(-4).padStart(cardNumber.length, '*')
 }
-

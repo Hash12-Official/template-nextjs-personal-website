@@ -139,4 +139,3 @@ export function FinanceSheet({ onBack }: { onBack: () => void }) {
     </div>
   )
 }
-
